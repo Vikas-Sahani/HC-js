@@ -5,11 +5,19 @@ const user = {
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
         console.log(this);
-    }
+    },
+
+    welcomeMsgWithArrowFn: ()=>{
+        console.log(`${this.username} , welcome to website From -> Arrow function`);
+        console.log(this);
+        
+    },
+
 
 }
 
 // user.welcomeMessage()
+user.welcomeMsgWithArrowFn()
 // user.username = "sam"
 // user.welcomeMessage()
 
