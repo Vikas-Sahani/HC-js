@@ -17,7 +17,7 @@ const user = {
 }
 
 // user.welcomeMessage()
-user.welcomeMsgWithArrowFn()
+// user.welcomeMsgWithArrowFn()
 // user.username = "sam"
 // user.welcomeMessage()
 
@@ -26,6 +26,7 @@ user.welcomeMsgWithArrowFn()
 // function chai(){
 //     let username = "hitesh"
 //     console.log(this.username);
+//     console.log(this);
 // }
 
 // chai()
@@ -33,6 +34,7 @@ user.welcomeMsgWithArrowFn()
 // const chai = function () {
 //     let username = "hitesh"
 //     console.log(this.username);
+//     console.log(this);
 // }
 
 const chai =  () => {
@@ -41,7 +43,7 @@ const chai =  () => {
 }
 
 
-// chai()
+chai()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
