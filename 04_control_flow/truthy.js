@@ -1,43 +1,44 @@
-const userEmail = []
+const userEmail = [];
 
 if (userEmail) {
-    console.log("Got user email");
+  console.log("Got user email");
 } else {
-    console.log("Don't have user email");
+  console.log("Don't have user email");
 }
 
-// falsy values
+// // falsy values
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
-//truthy values
+// // truthy values
 // "0", 'false', " ", [], {}, function(){}
 
 // if (userEmail.length === 0) {
 //     console.log("Array is empty");
 // }
 
-const emptyObj = {}
+// //How to check for the empty objects?
+const emptyObj = {};
 
 if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
+  console.log("Object is empty");
 }
 
-// Nullish Coalescing Operator (??): null undefined
+/* Nullish Coalescing Operator (??): `null` or `undefined` values ko variables me na store karne ke liye iss operator ka use kia jata h */
 
 let val1;
-// val1 = 5 ?? 10
-// val1 = null ?? 10
-// val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
-
-
+// val1 = 5 ?? 10 //val1 <- 5
+// val1 = null ?? 10  //val1 <- 10
+// val1 = undefined ?? 15  //val1 <- 15
+val1 = null ?? 10 ?? 20; //val1 <- 10
 
 console.log(val1);
 
-// Terniary Operator
+/* Terniary Operator */
 
 // condition ? true : false
 
-const iceTeaPrice = 100
-iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+const iceTeaPrice = 100;
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
+/** 48:25-52:49 - summary of Control flow */
